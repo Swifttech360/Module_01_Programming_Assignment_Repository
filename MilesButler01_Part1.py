@@ -1,4 +1,9 @@
-
+#Author: Miles Butler
+#Date written: 1/22/25
+#Python Interpreter: IDLE version 3.13
+#Assignment:Module 01 Programming Assignment
+#Summary: This is a Python program that gets a Celsius temperature from the user, then uses a formula to convert it
+# to Fahrenheit.
 while True:
     try:
         unformattedC = float(input('Enter Celsius temp to convert to Fahrenheit: \n'))

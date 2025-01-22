@@ -1,3 +1,10 @@
+#Author: Miles Butler
+#Date written: 1/22/25
+#Python Interpreter: IDLE version 3.13
+#Assignment:Module 01 Programming Assignment
+#Summary: This program that gets a base restaurant meal price as a user input, then prints the 18% tip, 7% tax,
+# and total charge based on that base meal price
+
 while True:
 	try:
 		baseCharge = float(input('Enter meal price: '))
@@ -14,7 +21,6 @@ while True:
 	loopQuestion = input("again? (y/n)\n").lower()
 	if loopQuestion in ("n", "no", "break"):
 		print("Have a good one!")
-	else:
-		print("\n")
+	
 	
 		
