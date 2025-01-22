@@ -11,18 +11,18 @@ while True:
     except ValueError:
         print('Invalid input \nPlease try again.\n')
         continue
-    unformattedF = (unformattedC)
-        #(9/5 * celsius + 32)
+    unformattedF = (9/5 * unformattedC + 32)
 
 
     fahrenheit = (
 f"{unformattedF:.0f}" if unformattedF % 1 == 0
- else f"{unformattedF:.1f}" if round(unformattedF % 1, 1) == unformattedF  % 1
-  else f"{unformattedF:.0f}" if round(unformattedF % 1, 4) == unformattedF % 1
-   else f"{unformattedF:.2f}")
+ or round(unformattedF % 1, 2) == 0
+  else f"{unformattedF:.1f}" if round(unformattedF % 1, 1) == unformattedF % 1
+   or round(unformattedF % 1, 2) == round(unformattedF % 1, 2)
+    else f"{unformattedF:.2f}")
 
     celsius = f"{unformattedC:.0f}" if unformattedC % 1 == 0 else unformattedC
 
 
 
-    print(f'\n{unformattedC:.2f}ºC is equal to {fahrenheit}ºF')
+    print(f'\n{celsius}ºC is equal to {fahrenheit}ºF')
