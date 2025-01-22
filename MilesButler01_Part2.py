@@ -21,6 +21,7 @@ while True:
 	loopQuestion = input("again? (y/n)\n").lower()
 	if loopQuestion in ("n", "no", "break"):
 		print("Have a good one!")
+		break
 	
 	
 		

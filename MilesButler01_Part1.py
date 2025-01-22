@@ -17,7 +17,7 @@ while True:
 f"{unformattedF:.0f}" if unformattedF % 1 == 0
  or round(unformattedF % 1, 2) == 0
   else f"{unformattedF:.1f}" if round(unformattedF % 1, 1) == unformattedF % 1
-   or round(unformattedF % 1, 2) == round(unformattedF % 1, 2)
+   or round(unformattedF % 1, 2) == round(unformattedF % 1, 1)
     else f"{unformattedF:.2f}")
 
     celsius = f"{unformattedC:.0f}" if unformattedC % 1 == 0 else unformattedC
